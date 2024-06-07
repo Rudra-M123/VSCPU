@@ -1,0 +1,434 @@
+$date
+	Fri Jun 07 08:53:15 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$scope module dut $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module cu $end
+$var wire 1 ! clk $end
+$var wire 1 " reset $end
+$var wire 8 # mem_bus [7:0] $end
+$var wire 14 $ control_signals [13:0] $end
+$var wire 8 % bus [7:0] $end
+$var wire 1 & SEL $end
+$var wire 2 ' M2 [1:0] $end
+$var wire 3 ( M1 [2:0] $end
+$var wire 4 ) ADDR [3:0] $end
+$var parameter 4 * CLEAR1 $end
+$var parameter 4 + FETCH1 $end
+$var parameter 4 , FETCH2 $end
+$var parameter 4 - FETCH3 $end
+$var parameter 4 . FLIP1 $end
+$var parameter 4 / NAND1 $end
+$var parameter 4 0 NAND2 $end
+$var parameter 4 1 STORE1 $end
+$var parameter 4 2 STORE2 $end
+$var reg 8 3 AC [7:0] $end
+$var reg 8 4 ALU [7:0] $end
+$var reg 6 5 AR [5:0] $end
+$var reg 8 6 DR [7:0] $end
+$var reg 2 7 IR [1:0] $end
+$var reg 6 8 PC [5:0] $end
+$var reg 13 9 microcode [12:0] $end
+$var reg 4 : state [3:0] $end
+$scope module mem0 $end
+$var wire 1 ; READ $end
+$var wire 1 < WRITE $end
+$var wire 6 = addr [5:0] $end
+$var wire 8 > data [7:0] $end
+$var reg 8 ? data_out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1111 2
+b1110 1
+b1101 0
+b1100 /
+b1010 .
+b10 -
+b1 ,
+b0 +
+b1000 *
+$end
+#0
+$dumpvars
+bx ?
+bz >
+bz =
+0<
+0;
+b0 :
+b1000001 9
+b0 8
+b0 7
+b0 6
+bz 5
+b0 4
+b0 3
+b1 )
+b1 (
+b0 '
+0&
+b0 %
+b10000001 $
+bz #
+1"
+0!
+$end
+#1
+b0 :
+0"
+1!
+#2
+b0 5
+b0 =
+0!
+#3
+b1000000 ?
+b1000000 #
+b1000000 >
+b1000000 %
+1;
+b10 (
+b10010000000110 $
+b1 '
+b10 )
+b10010010 9
+b1 :
+1!
+#4
+b1 8
+b1000000 6
+0!
+#5
+bz #
+bz >
+0;
+1&
+b11 (
+b100010001 $
+b10 '
+bx )
+b100001110xxxx 9
+b10 :
+1!
+#6
+b1 7
+0!
+#7
+b11111111 4
+bz %
+0&
+b101 (
+b1001000 $
+b0 '
+b0 )
+b101000000 9
+b1010 :
+1!
+#8
+b0 4
+b11111111 3
+0!
+#9
+b1 %
+b10000001 $
+b1 (
+b1 )
+b1000001 9
+b0 :
+1!
+#10
+b1 5
+b1 =
+0!
+#11
+b10000101 ?
+b10000101 #
+b10000101 >
+b10000101 %
+1;
+b10 (
+b10010000000110 $
+b1 '
+b10 )
+b10010010 9
+b1 :
+1!
+#12
+b10 8
+b10000101 6
+0!
+#13
+bz #
+bz >
+0;
+1&
+b11 (
+b100010001 $
+b10 '
+bx )
+b100001110xxxx 9
+b10 :
+1!
+#14
+b101 5
+b101 =
+b10 7
+0!
+#15
+b110011 %
+b110011 ?
+b110011 #
+b110011 >
+1;
+0&
+b0 (
+b10010000000100 $
+b1 '
+b1101 )
+b11101 9
+b1100 :
+1!
+#16
+b110011 6
+0!
+#17
+b11001100 4
+bz #
+bz >
+0;
+b110 (
+b100101000 $
+b0 '
+b0 )
+b110000000 9
+b1101 :
+1!
+#18
+b11111111 4
+b11001100 3
+0!
+#19
+b0 4
+b10 %
+b10000001 $
+b1 (
+b1 )
+b1000001 9
+b0 :
+1!
+#20
+b10 5
+b10 =
+0!
+#21
+b11000111 ?
+b11000111 #
+b11000111 >
+b11000111 %
+1;
+b10 (
+b10010000000110 $
+b1 '
+b10 )
+b10010010 9
+b1 :
+1!
+#22
+b11 8
+b11000111 6
+0!
+#23
+bz #
+bz >
+0;
+1&
+b11 (
+b100010001 $
+b10 '
+bx )
+b100001110xxxx 9
+b10 :
+1!
+#24
+b111 5
+b111 =
+b11 7
+0!
+#25
+b11001100 %
+0&
+b0 (
+b1000000100 $
+b11 '
+b1111 )
+b111111 9
+b1110 :
+1!
+#26
+b11001100 6
+0!
+#27
+b11001100 %
+1<
+b111 (
+b1100100000000 $
+b0 '
+b0 )
+b111000000 9
+b1111 :
+1!
+#28
+0!
+#29
+b11 %
+0<
+b10000001 $
+b1 (
+b1 )
+b1000001 9
+b0 :
+1!
+#30
+b11 5
+b11 =
+0!
+#31
+b0 ?
+b0 #
+b0 >
+b0 %
+1;
+b10 (
+b10010000000110 $
+b1 '
+b10 )
+b10010010 9
+b1 :
+1!
+#32
+b100 8
+b0 6
+0!
+#33
+bz #
+bz >
+0;
+1&
+b11 (
+b100010001 $
+b10 '
+bx )
+b100001110xxxx 9
+b10 :
+1!
+#34
+b0 5
+b0 =
+b0 7
+0!
+#35
+bz %
+0&
+b100 (
+b1000 $
+b0 '
+b0 )
+b100000000 9
+b1000 :
+1!
+#36
+b0 3
+0!
+#37
+b100 %
+b10000001 $
+b1 (
+b1 )
+b1000001 9
+b0 :
+1!
+#38
+b100 5
+b100 =
+0!
+#39
+b10000110 ?
+b10000110 #
+b10000110 >
+b10000110 %
+1;
+b10 (
+b10010000000110 $
+b1 '
+b10 )
+b10010010 9
+b1 :
+1!
+#40
+b101 8
+b10000110 6
+0!
+#41
+bz #
+bz >
+0;
+1&
+b11 (
+b100010001 $
+b10 '
+bx )
+b100001110xxxx 9
+b10 :
+1!
+#42
+b110 5
+b110 =
+b10 7
+0!
+#43
+b11001100 %
+b11001100 ?
+b11001100 #
+b11001100 >
+1;
+0&
+b0 (
+b10010000000100 $
+b1 '
+b1101 )
+b11101 9
+b1100 :
+1!
+#44
+b11001100 6
+0!
+#45
+b11111111 4
+bz #
+bz >
+0;
+b110 (
+b100101000 $
+b0 '
+b0 )
+b110000000 9
+b1101 :
+1!
+#46
+b110011 4
+b11111111 3
+0!
+#47
